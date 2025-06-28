@@ -1,0 +1,33 @@
+{
+  "name": "beatleader_replay",
+  "version": "1.0.0",
+  "description": "A simple Electron app to serve BeatSaber replay files.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "selfsigned": "^2.4.1",
+    "sudo-prompt": "^9.2.1"
+  },
+  "devDependencies": {
+    "electron": "^31.2.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.example.beatleaderreplayserver",
+    "productName": "BeatLeader Replay Server",
+    "artifactName": "BeatLeaderReplayServer.exe",
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    }
+  }
+}
